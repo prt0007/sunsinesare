@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Sunsine - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+        body {
+            font-family: 'Playfair Display', serif;
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-black text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a class="text-2xl font-bold" href="index.html">Sunsine</a>
+            <div>
+                <a class="px-4 hover:text-yellow-500 transition duration-300" href="index.html">Home</a>
+                <a class="px-4 hover:text-yellow-500 transition duration-300" href="about.html">About</a>
+                <a class="px-4 hover:text-yellow-500 transition duration-300" href="products.html">Products</a>
+                <a class="px-4 hover:text-yellow-500 transition duration-300" href="signup.html">Sign Up</a>
+                <a class="px-4 hover:text-yellow-500 transition duration-300" href="contact.html">Contact</a>
+                <a class="px-4 hover:text-yellow-500 transition duration-300" href="terms.html">Terms</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Home Section -->
+    <section class="bg-black text-white flex items-center justify-center min-h-screen" id="home">
+        <div class="text-center fade-in">
+            <h1 class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">
+                sunsine
+            </h1>
+            <p class="text-lg text-gray-400 mt-2">
+                WEAR THE SUNSHINE,
+                <span class="text-gray-500"> SHINE IN STYLE</span>
+            </p>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-black text-white p-4 text-center">
+        <p>© 2023 Sunsine. All rights reserved.</p>
+    </footer>
+</body>
+</html>
